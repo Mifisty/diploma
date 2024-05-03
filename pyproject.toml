@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "diploma"
+version = "0.1.0"
+description = "Diploma project"
+authors = ["Evgenii <mifisty2000@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "8.0.2"
+selene = ">=2.0.0rc9"
+selenium = "^4.20.0"
+allure-pytest = "2.13.2"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
