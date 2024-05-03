@@ -1,6 +1,6 @@
 import allure
 
-from diploma.pages.favorites_page import favorites_page
+from diploma.pages.web.favorites_page import favorites_page
 
 
 @allure.parent_suite('Web')

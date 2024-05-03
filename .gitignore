@@ -13,6 +13,9 @@ allure-results
 #ключи
 .env
 
+#apk
+.apk
+
 # Distribution / packaging
 .Python
 build/

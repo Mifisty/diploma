@@ -1,6 +1,6 @@
 import allure
 
-from diploma.pages.basket_page import basket_page
+from diploma.pages.web.basket_page import basket_page
 
 
 @allure.parent_suite('Web')

@@ -35,8 +35,9 @@
 ```
 python -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
-pytest .
+pip install poetry
+poetry install --no-root
+pytest tests
 ```
 ----
 ### Удаленный запуск автотестов выполняется на сервере Jenkins

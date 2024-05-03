@@ -1,6 +1,6 @@
 import allure
 
-from diploma.pages.login_page import login_page
+from diploma.pages.web.login_page import login_page
 
 
 @allure.parent_suite('Web')

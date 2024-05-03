@@ -1,6 +1,6 @@
 import allure
 
-from diploma.pages.city_page import city_page
+from diploma.pages.web.city_page import city_page
 
 
 @allure.parent_suite('Web')
