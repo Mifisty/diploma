@@ -15,16 +15,13 @@ def test_get_cities():
     code = 200
 
     with allure.step('Получаем информацию о товаре'):
-        response = api_get(url)
+        result = api_get(url)
 
     with allure.step('Проверяем Статус код'):
-        assert response.status_code == code
-
+        assert result.status_code == code
     with allure.step('Проверяем что id товара правильное'):
-        assert response.json()['payload']['data']['id'] == id
-
+        assert result.json()['payload']['data']['id'] == id
     with allure.step('Проверяем что название товара правильное'):
-        assert response.json()['payload']['data']['title'] == title
-
+        assert result.json()['payload']['data']['title'] == title
     with allure.step('Проверяем схему JSON'):
-        validate(response.json(), schema=get_product)
+        validate(result.json(), schema=get_product)

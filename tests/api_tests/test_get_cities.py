@@ -15,16 +15,13 @@ def test_get_cities():
     code = 200
 
     with allure.step('Получаем список городов'):
-        response = api_get(url)
+        result = api_get(url)
 
     with allure.step('Проверяем статус код'):
-        assert response.status_code == code
-
+        assert result.status_code == code
     with allure.step('Проверяем количество городов в списке'):
-        assert len(response.json()['payload']) >= number_of_cities
-
+        assert len(result.json()['payload']) >= number_of_cities
     with allure.step('Проверяем что первый город имеет название Агрыз'):
-        assert response.json()['payload'][0]['name'] == name
-
+        assert result.json()['payload'][0]['name'] == name
     with allure.step('Проверяем схему JSON'):
-        validate(response.json(), schema=get_cities)
+        validate(result.json(), schema=get_cities)

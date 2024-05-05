@@ -13,7 +13,8 @@ load_dotenv()
 api_url = os.getenv('API_URL')
 headers = {
     'User-Agent': os.getenv('API_USER_AGENT'),
-    "Authorization": "Bearer " + api_token()
+    "Authorization": "Bearer " + api_token(),
+    "Content-Type": "application/json"
 }
 
 
