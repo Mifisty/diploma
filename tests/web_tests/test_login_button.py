@@ -1,9 +1,11 @@
 import allure
+import pytest
 
 from diploma.pages.web.login_page import login_page
 
 
 @allure.parent_suite('Web')
+@pytest.mark.web
 @allure.suite('Login button')
 @allure.title(f'Login button test')
 @allure.severity('Critical')

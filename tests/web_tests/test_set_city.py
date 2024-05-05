@@ -1,9 +1,11 @@
 import allure
+import pytest
 
 from diploma.pages.web.city_page import city_page
 
 
 @allure.parent_suite('Web')
+@pytest.mark.web
 @allure.suite('Set city')
 @allure.title(f'Set city test')
 @allure.severity('Major')

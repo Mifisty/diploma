@@ -2,11 +2,14 @@ import json
 import os
 
 import allure
+import pytest
+
 from diploma.utils.request_helper import api_post
 from dotenv import load_dotenv
 
 
 @allure.parent_suite('API')
+@pytest.mark.api
 @allure.suite('Profile')
 @allure.title(f'Change user contacts')
 @allure.severity('Major')

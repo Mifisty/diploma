@@ -1,9 +1,11 @@
 import allure
+import pytest
 
 from diploma.pages.web.basket_page import basket_page
 
 
 @allure.parent_suite('Web')
+@pytest.mark.web
 @allure.suite('Basket')
 @allure.title(f'Delete from basket')
 @allure.severity('Critical')

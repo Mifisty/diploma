@@ -1,10 +1,12 @@
 import allure
+import pytest
 from jsonschema import validate
 from diploma.utils.request_helper import api_get
 from schemas.schema_get_product import get_product
 
 
 @allure.parent_suite('API')
+@pytest.mark.api
 @allure.suite('Product')
 @allure.title(f'Сhecking product')
 @allure.severity('Major')

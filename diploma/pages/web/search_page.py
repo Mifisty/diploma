@@ -1,9 +1,7 @@
 import allure
-import pytest
 from selene import browser, have
 
 
-@pytest.mark.web
 class SearchPositive:
 
     @allure.step('Открываем браузер на странице https://kazanexpress.ru/')

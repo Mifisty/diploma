@@ -1,9 +1,11 @@
 import allure
+import pytest
 
 from diploma.pages.web.search_page import search_page
 
 
 @allure.parent_suite('Web')
+@pytest.mark.web
 @allure.suite('Search')
 @allure.title(f'Search positive test')
 @allure.severity('Major')

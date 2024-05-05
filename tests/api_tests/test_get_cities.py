@@ -1,10 +1,12 @@
 import allure
+import pytest
 from jsonschema import validate
 from diploma.utils.request_helper import api_get
 from schemas.schema_get_cities import get_cities
 
 
 @allure.parent_suite('API')
+@pytest.mark.api
 @allure.suite('Cities')
 @allure.title(f'Сhecking the number of cities')
 @allure.severity('Major')

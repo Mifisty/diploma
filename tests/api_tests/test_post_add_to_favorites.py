@@ -1,9 +1,12 @@
 import json
 import allure
+import pytest
+
 from diploma.utils.request_helper import api_post
 
 
 @allure.parent_suite('API')
+@pytest.mark.api
 @allure.suite('Favorites')
 @allure.title(f'Add to favorites')
 @allure.severity('Major')

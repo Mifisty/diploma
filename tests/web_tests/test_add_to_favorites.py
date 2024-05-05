@@ -1,9 +1,11 @@
 import allure
+import pytest
 
 from diploma.pages.web.favorites_page import favorites_page
 
 
 @allure.parent_suite('Web')
+@pytest.mark.web
 @allure.suite('Favorites')
 @allure.title(f'Add to favorites')
 @allure.severity('Major')

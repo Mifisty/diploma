@@ -1,10 +1,8 @@
 import allure
-import pytest
 from appium.webdriver.common.appiumby import AppiumBy
 from selene import browser, have, be
 
 
-@pytest.mark.mobile
 class MobileFavoritesPage:
     @allure.step('Находим и добавляем товар в избранное')
     def add_item_to_favorites(self):

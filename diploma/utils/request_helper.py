@@ -3,7 +3,6 @@ import logging
 import os
 
 import allure
-import pytest
 import requests
 from allure_commons.types import AttachmentType
 from dotenv import load_dotenv
@@ -19,7 +18,6 @@ headers = {
 }
 
 
-@pytest.mark.api
 def api_post(url, **kwargs):
     with allure.step("API Request POST"):
         result = requests.post(url=api_url + url, headers=headers, **kwargs)
@@ -53,7 +51,6 @@ def api_post(url, **kwargs):
     return result
 
 
-@pytest.mark.api
 def api_get(url, **kwargs):
     with allure.step("API Request GET"):
         result = requests.get(url=api_url + url, headers=headers, **kwargs)
