@@ -1,7 +1,9 @@
 import allure
+import pytest
 from selene import have, browser
 
 
+@pytest.mark.web
 class BasketPage:
 
     @allure.step('Открываем браузер на странице https://kazanexpress.ru/')

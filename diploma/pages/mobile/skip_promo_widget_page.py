@@ -1,10 +1,12 @@
 import time
 
 import allure
+import pytest
 from appium.webdriver.common.appiumby import AppiumBy
 from selene import browser, command
 
 
+@pytest.mark.mobile
 class SkipPromoWidget:
     @allure.step('Пропускаем стартовый виджет')
     def skip_promo_widget(self):
@@ -25,6 +27,5 @@ class SkipPromoWidget:
 
 
 skip_widget = SkipPromoWidget()
-
 
 # com.kazanexpress.ke_app:id/design_bottom_sheet

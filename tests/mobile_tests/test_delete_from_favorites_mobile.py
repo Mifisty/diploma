@@ -1,12 +1,10 @@
 import allure
-import pytest
 
 from diploma.pages.mobile.mobile_favorites_page import favorites_page
 from diploma.pages.mobile.skip_promo_widget_page import skip_widget
 
 
 @allure.parent_suite('Mobile')
-@pytest.mark.mobile
 @allure.suite('Favorites')
 @allure.title(f'Delete from favorites mobile')
 @allure.severity('Critical')

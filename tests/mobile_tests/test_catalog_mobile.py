@@ -1,12 +1,10 @@
 import allure
-import pytest
 
 from diploma.pages.mobile.mobile_catalog_page import catalog_page
 from diploma.pages.mobile.skip_promo_widget_page import skip_widget
 
 
 @allure.parent_suite('Mobile')
-@pytest.mark.mobile
 @allure.suite('Catalog')
 @allure.title(f'Search item by category catalog mobile')
 @allure.severity('Major')

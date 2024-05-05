@@ -1,8 +1,10 @@
 import allure
+import pytest
 from appium.webdriver.common.appiumby import AppiumBy
 from selene import browser, have, be
 
 
+@pytest.mark.mobile
 class MobileCatalogPage:
     @allure.step('Поиск товара по категориям каталога')
     def product_search_by_сategory(self):

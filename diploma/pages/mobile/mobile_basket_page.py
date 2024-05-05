@@ -1,8 +1,10 @@
 import allure
+import pytest
 from appium.webdriver.common.appiumby import AppiumBy
 from selene import browser, have, be
 
 
+@pytest.mark.mobile
 class MobileBasketPage:
     @allure.step('Находим и добавляем товар в корзину')
     def add_item_to_basket(self):

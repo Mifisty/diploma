@@ -1,7 +1,9 @@
 import allure
+import pytest
 from selene import browser, have
 
 
+@pytest.mark.web
 class FavoritesPage:
     @allure.step('Открываем браузер на странице https://kazanexpress.ru/')
     def open(self):
