@@ -5,6 +5,7 @@ import allure
 from diploma.utils.request_helper import api_post
 from dotenv import load_dotenv
 
+
 @allure.parent_suite('API')
 @allure.suite('Profile')
 @allure.title(f'Change user contacts')
@@ -25,6 +26,7 @@ def test_change_user_contacts():
     })
     with allure.step('Выполняем запрос на изменение персоальных данных'):
         response = api_post(url, data=payload)
+
     with allure.step('Проверяем статус код ответа'):
         assert response.status_code == 200
     with allure.step('Проверяем изменились данные пользователя'):

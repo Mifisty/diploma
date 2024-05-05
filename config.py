@@ -47,6 +47,3 @@ def context_options(context):
         )
 
     return options
-
-# appium --base-path /wd/hub
-# pytest tests/android_app/test_wikipedia_universal.py --context=local_real_device
