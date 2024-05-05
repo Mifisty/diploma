@@ -1,10 +1,12 @@
 import allure
+import pytest
 
 from diploma.pages.mobile.mobile_basket_page import basket_page
 from diploma.pages.mobile.skip_promo_widget_page import skip_widget
 
 
 @allure.parent_suite('Mobile')
+@pytest.mark.mobile
 @allure.suite('Basket')
 @allure.title(f'Add to basket mobile')
 @allure.severity('Blocker')
