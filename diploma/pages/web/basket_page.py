@@ -1,3 +1,5 @@
+import time
+
 import allure
 from selene import have, browser
 
@@ -31,6 +33,7 @@ class BasketPage:
 
     @allure.step('Удаляем товар из корзины')
     def delete_item_from_basket(self):
+        time.sleep(2)
         browser.element('[data-test-id=button__delete-from-cart]').click()
         return self
 

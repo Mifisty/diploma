@@ -1,3 +1,5 @@
+import time
+
 import allure
 from selene import browser, have
 
@@ -28,6 +30,7 @@ class FavoritesPage:
 
     @allure.step('Удаляем товар из избранного')
     def delete_item_from_favorites(self):
+        time.sleep(2)
         browser.element('[data-test-id=button__add-to-favorites]').click()
 
     @allure.step('Проверяем то что в избранном нет товаров')
