@@ -3,7 +3,7 @@ import os
 import pytest
 from dotenv import load_dotenv
 from appium.options.android import UiAutomator2Options
-from diploma.utils import file
+from kazanexpress_project_api_mobile_ui.utils import file
 
 
 @pytest.fixture(scope="session", autouse=True)

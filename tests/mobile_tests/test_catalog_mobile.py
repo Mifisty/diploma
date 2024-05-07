@@ -1,8 +1,8 @@
 import allure
 import pytest
 
-from diploma.pages.mobile.mobile_catalog_page import catalog_page
-from diploma.pages.mobile.skip_promo_widget_page import skip_widget
+from kazanexpress_project_api_mobile_ui.pages.mobile.mobile_catalog_page import catalog_page
+from kazanexpress_project_api_mobile_ui.pages.mobile.skip_promo_widget_page import skip_widget
 
 
 @allure.parent_suite('Mobile')

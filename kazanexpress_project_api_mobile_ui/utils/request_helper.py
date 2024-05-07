@@ -7,7 +7,7 @@ import requests
 from allure_commons.types import AttachmentType
 from dotenv import load_dotenv
 
-from diploma.pages.api.token import api_token
+from kazanexpress_project_api_mobile_ui.pages.api.token import api_token
 
 load_dotenv()
 api_url = os.getenv('API_URL')

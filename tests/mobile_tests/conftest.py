@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 from appium import webdriver
 
 import config
-from diploma.utils import attach
+from kazanexpress_project_api_mobile_ui.utils import attach
 
 
 @pytest.fixture(scope="session", autouse=True)

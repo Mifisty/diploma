@@ -1,7 +1,7 @@
 import allure
 import pytest
 from jsonschema import validate
-from diploma.utils.request_helper import api_get
+from kazanexpress_project_api_mobile_ui.utils.request_helper import api_get
 from schemas.schema_get_cities import get_cities
 
 

@@ -1,7 +1,7 @@
 import allure
 import pytest
 
-from diploma.pages.web.search_page import search_page
+from kazanexpress_project_api_mobile_ui.pages.web.search_page import search_page
 
 
 @allure.parent_suite('Web')

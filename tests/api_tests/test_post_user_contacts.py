@@ -4,7 +4,7 @@ import os
 import allure
 import pytest
 
-from diploma.utils.request_helper import api_post
+from kazanexpress_project_api_mobile_ui.utils.request_helper import api_post
 from dotenv import load_dotenv
 
 

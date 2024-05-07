@@ -1,7 +1,7 @@
 import allure
 import pytest
 
-from diploma.pages.web.favorites_page import favorites_page
+from kazanexpress_project_api_mobile_ui.pages.web.favorites_page import favorites_page
 
 
 @allure.parent_suite('Web')
