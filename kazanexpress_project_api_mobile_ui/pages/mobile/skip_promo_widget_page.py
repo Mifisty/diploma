@@ -22,7 +22,5 @@ class SkipPromoWidget:
         except:
             browser.element((AppiumBy.XPATH, '//android.widget.ScrollView/android.view.View[2]')).click()
 
-        return self
-
 
 skip_widget = SkipPromoWidget()

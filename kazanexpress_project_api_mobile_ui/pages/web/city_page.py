@@ -7,7 +7,6 @@ class CityPage:
     @allure.step('Открываем браузер на странице https://kazanexpress.ru/')
     def open(self):
         browser.open('/')
-        return self
 
     @allure.step('Меняем город нахождения на Воронеж')
     def set_city(self):
