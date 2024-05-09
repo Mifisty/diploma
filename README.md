@@ -1,10 +1,11 @@
-<h1> Проект по тестированию интернет-магазина "KazanExpress"</h1>
+# Проект по автоматизации тестирования сайта и мобильного приложения KazanExpress.ru
 
 > <a target="_blank" href="https://kazanexpress.ru/">Ссылка на сайт</a>
 ![This is an image](design/images/main.png)
 ----
 ### Проект реализован с использованием:
 <img src="design/icons/python-original.svg" width="50"> <img src="design/icons/pytest.png" width="50"> <img src="design/icons/intellij_pycharm.png" width="50"> <img src="design/icons/selene.png" width="50"> <img src="design/icons/selenoid.png" width="50"> <img src="design/icons/jenkins.png" width="50"> <img src="design/icons/allure_report.png" width="50"> <img src="design/icons/allure_testops.png" width="50"> <img src="design/icons/tg.png" width="50"> <img src="design/icons/jira.png" width="50">
+<img src="design/icons/appium.png" width="50"><img src="design/icons/Github.png" width="50"><img src="design/icons/pysharm.png" width="50"><img src="design/icons/request.png" width="50">
 
 ----
 
@@ -17,6 +18,7 @@
 * Интеграция с Allure TestOps
 * Автоматизация отчетности о тестовых прогонах и тест-кейсах в Jira
 * Запуск web/UI автотестов в Selenoid
+* Запуск мобильных автотестов в Browserstack
 
  ### Список проверок, реализованных в web/UI автотестах
 
@@ -30,6 +32,26 @@
 - [x] Удаление товара из корзины
 
 ----
+ ### Список проверок, реализованных в API автотестах
+
+- [x] Запрос на список городов, доступных для доставки
+- [x] Запрос на получение карточки товара
+- [x] Запрос на добавление товара в избранное
+- [x] Запрос на удаление товара из избранного
+- [x] Запрос на изменение персональных данных в профиле покупателя
+
+____
+
+ ### Список проверок, реализованных в mobile автотестах
+
+- [x] Добавление товара в избранное
+- [x] Удаление товара из избранного
+- [x] Добавление товара в корзину
+- [x] Удаление товара из корзины
+- [x] Поиск товара в каталоге
+
+____
+
 ### Локальный запуск
 > Для локального запуска с дефолтными значениями необходимо выполнить команду:
 ```
@@ -37,25 +59,50 @@ python -m venv .venv
 source .venv/bin/activate
 pip install poetry
 poetry install --no-root
-pytest tests
+pytest .
 ```
 ----
 ### Удаленный запуск автотестов выполняется на сервере Jenkins
-> <a target="_blank" href="https://jenkins.autotests.cloud/job/test_kaz_sh/">Ссылка на проект в Jenkins</a>
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/mif_kaz_project">Ссылка на проект в Jenkins</a>
 #### Для запуска автотестов в Jenkins
 
-1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/test_kaz_sh/">проект</a>
-2. Нажать кнопку `Build`
-3. Результат запуска сборки можно посмотреть в отчёте Allure
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/mif_kaz_project">проект</a>
+2. Нажать кнопку `Build with parameters`
+3. Выбрать тесты для запуска
+4. Результат запуска сборки можно посмотреть в отчёте Allure, в запуске Allure TestOps
 ----
+
+### Параметры сборки
+
+>
+> ><code>tests</code> – запускает все тесты проекта api, mobile, web.
+>
+> ><code>tests/api_tests</code> – запускает только api тесты.
+>
+> ><code>tests/mobile_tests</code> – запускает только mobile тесты.
+> 
+> ><code>tests/web_tests</code> – запускает только web тесты.
 ### Allure отчет
 
 
 #### Общие результаты
 ![This is an image](design/images/allure_report.png)
+#### Список тест кейсов в Allure 
+![This is an image](design/images/allure_list_tk.png)
+#### Пример тест кейса в Allure с логированием и attachments 
+![This is an image](design/images/allure_log_attach.png)
+#### Примеры запуска в Allure TestOps
+![This is an image](design/images/allure_testops.png)
+
+![This is an image](design/images/allure_testOps_web.png)
 #### Список тест кейсов в Allure TestOps
-![This is an image](design/images/allure-testops.png)
+![This is an image](design/images/testops_tk.png)
 #### Нотификация в Telegram
-![This is an image](design/images/бот.png)
+![This is an image](design/images/bot.png)
+#### Видео прохождения теста Web
+![This is an video](design/images/video.gif)
+#### Видео прохождения теста Mobile
+![This is an video](design/images/mobile.gif)
+
 
 
